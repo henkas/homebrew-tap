@@ -1,18 +1,37 @@
-# Henkas Tap
+# henkas/tap
 
-## How do I install these formulae?
+Homebrew tap for `henkas` formulae.
 
-`brew install henkas/tap/<formula>`
+## Install
 
-Or `brew tap henkas/tap` and then `brew install <formula>`.
+```bash
+brew tap henkas/tap
+brew install henkas/tap/sfb
+```
 
-Or, in a `brew bundle` `Brewfile`:
+Or in a `Brewfile`:
 
 ```ruby
 tap "henkas/tap"
-brew "<formula>"
+brew "henkas/tap/sfb"
 ```
 
-## Documentation
+## Available Formulae
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+- `sfb` - Smart File Browser for macOS terminal with safe guardrails.
+
+## Maintenance Workflow
+
+- Formula PRs are validated by `brew test-bot` on pull requests.
+- To publish bottled artifacts from a green formula PR, apply the `pr-pull` label.
+- Release updates from `henkas/homebrew-sfb` are opened as automated PRs to this tap.
+
+## Security
+
+Report vulnerabilities privately via:
+- https://github.com/henkas/homebrew-tap/security/advisories/new
+
+## References
+
+- Homebrew docs: https://docs.brew.sh
+- Homebrew tap authoring: https://docs.brew.sh/How-to-Create-and-Maintain-a-Tap
