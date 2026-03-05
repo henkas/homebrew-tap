@@ -24,7 +24,7 @@ brew "henkas/tap/sfb"
 
 - Formula PRs are validated by `brew test-bot` on pull requests.
 - To publish bottled artifacts from a green formula PR, apply the `pr-pull` label.
-- Release updates from `henkas/homebrew-sfb` are opened as automated PRs to this tap.
+- Release updates from `henkas/sfb` are opened as automated PRs to this tap.
 
 ## Security
 
